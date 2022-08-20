@@ -1,0 +1,7 @@
+EMPLOYEE_OR_MEMBER_OF(e1,e2)	The youngest of 13 surviving children, <e1> Tagore </e1> was born on <e2> 7 May 1861 </e2> in the Jorasanko mansion in Calcutta, the son of Debendranath Tagore and Sarada Devi.
+EMPLOYEE_OR_MEMBER_OF(e1,e2)	The youngest of 13 surviving children, <e1> Tagore </e1> was born on 7 May 1861 in the Jorasanko mansion in <e2> Calcutta </e2>, the son of Debendranath Tagore and Sarada Devi.
+EMPLOYEE_OR_MEMBER_OF(e1,e2)	The youngest of 13 surviving children, <e1> Tagore </e1> was born on 7 May 1861 in the Jorasanko mansion in Calcutta, the son of <e2> Debendranath Tagore </e2> and Sarada Devi.
+EMPLOYEE_OR_MEMBER_OF(e1,e2)	The youngest of 13 surviving children, <e1> Tagore </e1> was born on 7 May 1861 in the Jorasanko mansion in Calcutta, the son of Debendranath Tagore and <e2> Sarada Devi </e2>.
+EMPLOYEE_OR_MEMBER_OF(e1,e2)	The youngest of 13 surviving children, Tagore was born on 7 May 1861 in the Jorasanko mansion in <e1> Calcutta </e1>, the son of <e2> Debendranath Tagore </e2> and Sarada Devi.
+EMPLOYEE_OR_MEMBER_OF(e1,e2)	The youngest of 13 surviving children, Tagore was born on 7 May 1861 in the Jorasanko mansion in <e1> Calcutta </e1>, the son of Debendranath Tagore and <e2> Sarada Devi </e2>.
+EMPLOYEE_OR_MEMBER_OF(e1,e2)	The youngest of 13 surviving children, Tagore was born on 7 May 1861 in the Jorasanko mansion in Calcutta, the son of <e1> Debendranath Tagore </e1> and <e2> Sarada Devi </e2>.

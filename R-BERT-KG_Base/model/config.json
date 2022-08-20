@@ -1,0 +1,50 @@
+{
+  "_name_or_path": "bert-base-uncased",
+  "architectures": [
+    "RBERT"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": "semeval",
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "id2label": {
+    "0": "EMPLOYEE_OR_MEMBER_OF(e1,e2)",
+    "1": "EMPLOYEE_OR_MEMBER_OF(e2,e1)",
+    "10": "NATIONALITY(e1,e2)",
+    "11": "NATIONALITY(e2,e1)",
+    "2": "PLACE_OF_RESIDENCE(e1,e2)",
+    "3": "PLACE_OF_RESIDENCE(e2,e1)",
+    "4": "EDUCATED_AT(e1,e2)",
+    "5": "EDUCATED_AT(e2,e1)",
+    "6": "PLACE_OF_BIRTH(e1,e2)",
+    "7": "PLACE_OF_BIRTH(e2,e1)",
+    "8": "DATE_OF_BIRTH(e1,e2)",
+    "9": "DATE_OF_BIRTH(e2,e1)"
+  },
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "label2id": {
+    "DATE_OF_BIRTH(e1,e2)": 8,
+    "DATE_OF_BIRTH(e2,e1)": 9,
+    "EDUCATED_AT(e1,e2)": 4,
+    "EDUCATED_AT(e2,e1)": 5,
+    "EMPLOYEE_OR_MEMBER_OF(e1,e2)": 0,
+    "EMPLOYEE_OR_MEMBER_OF(e2,e1)": 1,
+    "NATIONALITY(e1,e2)": 10,
+    "NATIONALITY(e2,e1)": 11,
+    "PLACE_OF_BIRTH(e1,e2)": 6,
+    "PLACE_OF_BIRTH(e2,e1)": 7,
+    "PLACE_OF_RESIDENCE(e1,e2)": 2,
+    "PLACE_OF_RESIDENCE(e2,e1)": 3
+  },
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}

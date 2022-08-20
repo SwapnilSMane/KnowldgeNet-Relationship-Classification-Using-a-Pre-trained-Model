@@ -1,0 +1,106 @@
+!!!WARNING!!! The proposed file contains 1 label(s) of type 'DATE_OF_BIRTH(e1,e2)', which is NOT present in the key file.
+
+<<< (2*5+2)-WAY EVALUATION (USING DIRECTIONALITY)>>>:
+
+Confusion matrix:
+         _O_  _O_  _O_  _O_  _O_  _O_  _O_  _O_ <-- classified as
+      +----------------------------------------+ -SUM- skip ACTUAL
+  _O_ |   0    0    0    0    1    0    0    0 |    1    0    1
+  _O_ |   0    0    0    0    1    0    0    0 |    1    0    1
+  _O_ |   0    0    0    0    1    0    0    0 |    1    0    1
+  _O_ |   0    0    0    0    1    0    0    0 |    1    0    1
+  _O_ |   0    0    0    0    1    0    0    0 |    1    0    1
+  _O_ |   0    0    0    0    0    0    0    1 |    1    0    1
+  _O_ |   0    0    0    0    1    0    0    0 |    1    0    1
+      +----------------------------------------+
+ -SUM-    0    0    0    0    6    0    0    1      7    0    7
+
+Coverage = 7/7 = 100.00%
+Accuracy (calculated for the above confusion matrix) = 1/7 = 14.29%
+Accuracy (considering all skipped examples as Wrong) = 1/7 = 14.29%
+Accuracy (considering all skipped examples as Other) = 1/7 = 14.29%
+
+Results for the individual relations:
+     DATE_OF_BIRTH(e2,e1) :    P =    0/   0 =   0.00%     R =    0/   1 =   0.00%     F1 =   0.00%
+EMPLOYEE_OR_MEMBER_OF(e1,e2) :    P =    0/   0 =   0.00%     R =    0/   1 =   0.00%     F1 =   0.00%
+EMPLOYEE_OR_MEMBER_OF(e2,e1) :    P =    0/   0 =   0.00%     R =    0/   1 =   0.00%     F1 =   0.00%
+       NATIONALITY(e1,e2) :    P =    0/   0 =   0.00%     R =    0/   1 =   0.00%     F1 =   0.00%
+    PLACE_OF_BIRTH(e1,e2) :    P =    1/   6 =  16.67%     R =    1/   1 = 100.00%     F1 =  28.57%
+PLACE_OF_RESIDENCE(e1,e2) :    P =    0/   0 =   0.00%     R =    0/   1 =   0.00%     F1 =   0.00%
+PLACE_OF_RESIDENCE(e2,e1) :    P =    0/   0 =   0.00%     R =    0/   1 =   0.00%     F1 =   0.00%
+
+Micro-averaged result (excluding Other):
+P =    1/   6 =  16.67%     R =    1/   7 =  14.29%     F1 =  15.38%
+
+MACRO-averaged result (excluding Other):
+P =   2.38%	R =  14.29%	F1 =   4.08%
+
+
+
+<<< (5+2)-WAY EVALUATION IGNORING DIRECTIONALITY >>>:
+
+Confusion matrix:
+         _O_  _O_  _O_  _O_  _O_ <-- classified as
+      +-------------------------+ -SUM- skip ACTUAL
+  _O_ |   0    0    0    1    0 |    1    0    1
+  _O_ |   0    0    0    2    0 |    2    0    2
+  _O_ |   0    0    0    1    0 |    1    0    1
+  _O_ |   0    0    0    1    0 |    1    0    1
+  _O_ |   1    0    0    1    0 |    2    0    2
+      +-------------------------+
+ -SUM-    1    0    0    6    0      7    0    7
+
+Coverage = 7/7 = 100.00%
+Accuracy (calculated for the above confusion matrix) = 1/7 = 14.29%
+Accuracy (considering all skipped examples as Wrong) = 1/7 = 14.29%
+Accuracy (considering all skipped examples as Other) = 1/7 = 14.29%
+
+Results for the individual relations:
+            DATE_OF_BIRTH :    P =    0/   1 =   0.00%     R =    0/   1 =   0.00%     F1 =   0.00%
+    EMPLOYEE_OR_MEMBER_OF :    P =    0/   0 =   0.00%     R =    0/   2 =   0.00%     F1 =   0.00%
+              NATIONALITY :    P =    0/   0 =   0.00%     R =    0/   1 =   0.00%     F1 =   0.00%
+           PLACE_OF_BIRTH :    P =    1/   6 =  16.67%     R =    1/   1 = 100.00%     F1 =  28.57%
+       PLACE_OF_RESIDENCE :    P =    0/   0 =   0.00%     R =    0/   2 =   0.00%     F1 =   0.00%
+
+Micro-averaged result (excluding Other):
+P =    1/   7 =  14.29%     R =    1/   7 =  14.29%     F1 =  14.29%
+
+MACRO-averaged result (excluding Other):
+P =   3.33%	R =  20.00%	F1 =   5.71%
+
+
+
+<<< (5+2)-WAY EVALUATION TAKING DIRECTIONALITY INTO ACCOUNT -- OFFICIAL >>>:
+
+Confusion matrix:
+         _O_  _O_  _O_  _O_  _O_ <-- classified as
+      +-------------------------+ -SUM- xDIRx skip  ACTUAL
+  _O_ |   0    0    0    1    0 |    1     0     0      1
+  _O_ |   0    0    0    2    0 |    2     0     0      2
+  _O_ |   0    0    0    1    0 |    1     0     0      1
+  _O_ |   0    0    0    1    0 |    1     0     0      1
+  _O_ |   1    0    0    1    0 |    2     0     0      2
+      +-------------------------+
+ -SUM-    1    0    0    6    0      7     0     0      7
+
+Coverage = 7/7 = 100.00%
+Accuracy (calculated for the above confusion matrix) = 1/7 = 14.29%
+Accuracy (considering all skipped examples as Wrong) = 1/7 = 14.29%
+Accuracy (considering all skipped examples as Other) = 1/7 = 14.29%
+
+Results for the individual relations:
+            DATE_OF_BIRTH :    P =    0/(   1 +   0) =   0.00%     R =    0/   1 =   0.00%     F1 =   0.00%
+    EMPLOYEE_OR_MEMBER_OF :    P =    0/(   0 +   0) =   0.00%     R =    0/   2 =   0.00%     F1 =   0.00%
+              NATIONALITY :    P =    0/(   0 +   0) =   0.00%     R =    0/   1 =   0.00%     F1 =   0.00%
+           PLACE_OF_BIRTH :    P =    1/(   6 +   0) =  16.67%     R =    1/   1 = 100.00%     F1 =  28.57%
+       PLACE_OF_RESIDENCE :    P =    0/(   0 +   0) =   0.00%     R =    0/   2 =   0.00%     F1 =   0.00%
+
+Micro-averaged result (excluding Other):
+P =    1/   7 =  14.29%     R =    1/   7 =  14.29%     F1 =  14.29%
+
+MACRO-averaged result (excluding Other):
+P =   3.33%	R =  20.00%	F1 =   5.71%
+
+
+
+<<< The official score is (5+2)-way evaluation with directionality taken into account: macro-averaged F1 = 5.71% >>>
